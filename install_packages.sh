@@ -12,6 +12,8 @@ do
     fi
 done
 
-package="git"
-
-${package_manager} ${package}
+packages="git telnet "
+for package in $packages;
+do
+    ${package_manager} ${package}
+done
